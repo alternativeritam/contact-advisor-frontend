@@ -1,0 +1,131 @@
+h1{
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  margin-top : 20px;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  cursor: pointer;
+}
+h1:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  cursor: pointer;
+}
+h1:hover:after { 
+  width: 100%; 
+  left: 0; 
+  cursor: pointer;
+}
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
+
+#input-box{
+  margin-top : 50px;
+}
+.description{
+  background-color:  #F2336C;
+  box-shadow: 1px 1px #888888;
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px;
+
+}
+.description h1{
+  background-color: #7C33F2;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  
+}
+#submit:hover{
+  background-color: black !important;
+  color: white !important;
+}
+input {
+  
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  border : 1px solid black;
+  border-radius: 5px;
+  background-color: #F2336C;
+  box-shadow: 1px 1px 2px black, 0 0 15px blue, 0 0 5px darkblue;
+}
+::placeholder{
+  color: white;
+  opacity: 0.5;
+  font-size: 22px;
+}
+
+#social {
+  margin: 20px;
+}
+#social:hover{
+  padding-bottom: 5px; 
+}
+#mail{
+  margin: 20px !important;
+  font-family: 'Sofia';
+  padding: 10px;
+  font-size: 25px;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
+}
+#media-link > .fa {  
+  padding: 20px;  
+text-align: center;  
+  margin: 5px;  
+  font-size: 30px;  
+  width: 100px;  
+}
+.fa-facebook {  
+  background: #3B5998;  
+  color: white;  
+}  
+.fa-twitter {  
+  background: #55ACEE;  
+  color: white;  
+}  
+.fa-instagram {  
+  background: #125688;  
+  color: white;  
+}  
+.fa-youtube {  
+  background: #bb0000;  
+  color: white;  
+}  
+#media-link{
+  margin-top: 10px;
+}
+#heading{
+  animation-name: example;
+  animation-duration: 6s;
+  opacity: 1;
+}
+@keyframes example {
+  0%   {opacity: 0;}
+  20%  {opacity:  0.20;}
+  40%  {opacity:  0.40;}
+  60% {opacity:  0.60;}
+  80% {opacity:  0.80;}
+  100% {opacity:  1;}
+}
+
+
